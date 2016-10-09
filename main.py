@@ -20,7 +20,7 @@ if __name__ == "__main__":
     creat_repos.creat_all(team, config.get('global', 'netrc_file'))
     
   if args.team_file:
-    teamf = config.get('global', 'team_file')
+    teamf = args.team_file
     print 'team_file:', teamf
     teams = get_teams.get_teams(teamf)
     print '#teams: ', len(teams)
