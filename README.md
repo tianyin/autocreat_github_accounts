@@ -1,14 +1,24 @@
 ### Automatically create GitHub accounts, import source code, and add collaborators
 
-Before running the scripts, using `check_teams.py` to check the team file. We should not have one student joining two different teams.
+#### 1. Check teams
+If you are using a team file, you can use `check_teams.py` to check if one student is included in multiple teams (which is not allowed).
 ```
-python check_teams.py team3.csv
+python check_teams.py $teamfile
 ```
 
-The configuration file is `autocreat_github.conf`. Change the `team_file` parameter everytime you run the scripts. 
+#### 2. Create Github repos
+`main.py` is the script for generating a repo, import source code, and add collaborators. You can run by
+```
+python main.py --team="geoff tianyin karthik"
+```
+or 
+```
+python main.py --team-file="$team_file"
+```
+Before you do that, you need to do some configurations at `autocreat_github.conf`. Also, this script is hard-coded for FA16 class, and if you want to reuse, you need to rename some of the URLs. 
 
-`main.py` is the entry Python file to run the scripts. For logging, you can dump into a local file.
+For logging, you can dump into a local file.
 ```
-python main.py | tee run.log.3
-```
+python main.py --team="geoff tianyin karthik" | tee run.log
+
 
