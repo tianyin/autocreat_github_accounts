@@ -1,0 +1,4 @@
+#rename this file to netrcc and put your account and passwd here
+#don't upload the renamed file to github!!
+
+machine api.github.com password something login somebody
