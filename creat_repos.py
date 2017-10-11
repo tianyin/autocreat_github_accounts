@@ -102,7 +102,7 @@ def creat_all(team, netrcf, wait=1):
   for student in team:
     if add_collaborators(repo_name, student, netrcf) == False:
       print 'addco [' + student + '] to [' + repo_name + '] failed!'
-      return
+      #return
     else:
       print 'addco [' + student + '] to [' + repo_name + '] succeeded!'
 
