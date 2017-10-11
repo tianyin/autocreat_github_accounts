@@ -15,7 +15,7 @@ or
 ```
 python main.py --team-file="$team_file"
 ```
-Before you do that, you need to do some configurations at `autocreat_github.conf`. Also, this script is hard-coded for FA16 class, and if you want to reuse, you need to rename some of the URLs. 
+Before you do that, you need to do some configurations at `autocreat_github.conf`, rename `netrcc-template` to `netrcc` and put your github account/pw there (don't upload the new `netrcc`). Also, this script is hard-coded for FA16 class, and if you want to reuse, you need to rename some of the URLs. 
 
 For logging, you can dump into a local file.
 ```
